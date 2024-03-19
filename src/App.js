@@ -20,7 +20,7 @@ const choice = {
 function App() {
   
   const [userSelect, setUserSelect] = useState(null);
-
+  const [computerSelect, setcomputerSelect] = useState(null);
   const play = (userChoice) => {
     // console.log("clicked", userChoice);
     setUserSelect(choice[userChoice]) 
@@ -30,7 +30,7 @@ function App() {
     <>
       <div className="container">
         <Box title="You" item={userSelect} />
-        {/* <Box title="computer" /> */}
+        <Box title="computer" item={computerSelect} />
       </div>
       <div className="button-area">
         <button onClick={() => play("scissors")}>가위</button>
