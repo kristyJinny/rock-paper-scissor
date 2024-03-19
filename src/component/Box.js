@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Box = () => {
+const Box = (props) => {
+  console.log("props", props);
+
   return (
-    <div>
-      <h1>you</h1>
-      {/* <img src='' alt=''></img> */}
-      {/* <h2></h2> */}
+    <div className="box">
+      <h1>{props.title}</h1>
+      <img className="item-img" src={props.item && props.item.img} alt="이미지"></img>
+      <h2>WIN</h2>
     </div>
   )
 }
