@@ -4,15 +4,15 @@ import { useState } from 'react';
 
 const choice = {
   rock : {
-    name: "Rock",
+    name: "주먹",
     img: "https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day-1200x834.jpg"
   },
   scissors : {
-    name: "Scissors",
+    name: "가위",
     img: "https://cdn.imweb.me/thumbnail/20200514/7fc8b1411fa8d.png",
   },
   paper : {
-    name: "Paper",
+    name: "보",
     img: "https://w7.pngwing.com/pngs/406/64/png-transparent-white-paper-illustration-black-and-white-line-art-post-it-note-sticky-note-angle-white-text.png",
   },
   default: {
@@ -40,12 +40,12 @@ function App() {
     // 가위 바위 보 로직
     if(user.name === computer.name) {
       return "tie"
-    } else if (user.name === "Rock")
-      return computer.name === "Scissors" ? "win" : "lose";
-    else if (user.name === "Scissors")
-      return computer.name === "Paper" ? "win" : "lose";
-    else if (user.name === "Paper")
-    return computer.name === "Rock" ? "win" : "lose";
+    } else if (user.name === "주먹")
+      return computer.name === "가위" ? "win" : "lose";
+    else if (user.name === "가위")
+      return computer.name === "보" ? "win" : "lose";
+    else if (user.name === "보")
+    return computer.name === "주먹" ? "win" : "lose";
   }
   
   const randomChoice=()=> {
