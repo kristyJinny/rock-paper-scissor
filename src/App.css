@@ -13,9 +13,8 @@
   border: 1px solid black;
 }
 .item-img {
-  /* width: 400px; */
-  height: 400px; 
-  min-width: 400px;
+  width: 500px;
+  height: 300px;
 }
 
 .button-area {
@@ -35,4 +34,17 @@
 .button-area button:hover,
 .button-area button:active {
   background-color: yellow;
+}
+
+.win {
+  border: 10px solid green;
+  color: green;
+}
+.lose {
+  border: 10px solid red;
+  color: red;
+}
+.tie {
+  border: 10px solid black;
+  color: black;
 }
