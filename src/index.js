@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Weather from './Weather'
 import App from './App';
 import AppClass from './AppClass';
 import reportWebVitals from './reportWebVitals';
@@ -8,7 +9,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppClass />
+    <Weather />
+    {/* <AppClass /> */}
     {/* <App /> */}
   </React.StrictMode>
 );
