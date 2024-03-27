@@ -1,0 +1,51 @@
+/* 주먹 가위 보 */
+.container {
+  display: flex;
+  justify-content: center;
+
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  height: 600px;
+  border: 1px solid black;
+}
+.item-img {
+  width: 500px;
+  height: 300px;
+}
+
+.button-area {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+}
+.button-area button {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button-area button:hover,
+.button-area button:active {
+  background-color: yellow;
+}
+
+.win {
+  border: 10px solid green;
+  color: green;
+}
+.lose {
+  border: 10px solid red;
+  color: red;
+}
+.tie {
+  border: 10px solid black;
+  color: black;
+}

@@ -1,4 +1,4 @@
-import './App.css';
+import './Game.css';
 import Box from './component/Box';
 import { useState } from 'react';
 
