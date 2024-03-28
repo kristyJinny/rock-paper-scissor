@@ -9,3 +9,6 @@ const ProductDetail = () => {
 }
 
 export default ProductDetail;
+
+
+// https://my-json-server.typicode.com/kristyJinny/jinny-mall
