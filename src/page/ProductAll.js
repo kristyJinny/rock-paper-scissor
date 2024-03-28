@@ -8,8 +8,9 @@ const ProductAll = () => {
 
   const getProducts = async () => {
     // let url = `http://localhost:4001/products`;
-    let url = `https://my-json-server.typicode.com/kristyJinny/jinny-mall/products/${id}`;
-   
+    let url = `https://my-json-server.typicode.com/kristyJinny/rock-paper-scissor/products`;
+    // let url = `https://my-json-server.typicode.com/kristyJinny/jinny-mall/products`;
+    
     let response = await fetch(url);
     let data = await response.json();
     // console.log(data);
