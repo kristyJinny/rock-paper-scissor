@@ -22,15 +22,26 @@ const ProductAll = () => {
   },[])
 
   return (
-    <div className="mall-container">
+    <Container className="product-list-container">
       <Row>
         {products.map((item) => {
-          return <Col md={3}>
-          <ProductCard item={item} />
-        </Col>
+          return(
+            <Col md={3} sm={12}>
+              <ProductCard item={item} />
+            </Col>)
         })}
       </Row>
-    </div>
+    </Container>
+    // <div className="mall-container">
+    //   <Row>
+    //     {products.map((item) => {
+    //       return(
+    //         <Col md={3} sm={12}>
+    //           <ProductCard item={item} />
+    //         </Col>)
+    //     })}
+    //   </Row>
+    // </div>
   );
 }
 

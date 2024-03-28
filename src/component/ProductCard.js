@@ -10,10 +10,12 @@ const ProductCard = ({item}) => {
   return (
     <div className="product-card" onClick={showDetail}>
       <img src={item?.img} alt="" />
-      <div className="choice">{item?.choice === true ? 'choice' : ''}</div>
-      <div>{item?.title}</div>
-      <div>₩{item?.price}</div>
-      <div className="new-product">{item?.new === true ? '신제품' : ""}</div>
+      <div className="info">
+        <div className="choice">{item?.choice === true ? 'choice' : ''}</div>
+        <div className="title">{item?.title}</div>
+        <div className="price">₩{item?.price}</div>
+        <div className="new-product">{item?.new === true ? '신제품' : ""}</div>
+      </div>
     </div>
   );
 };

@@ -83,7 +83,7 @@ function Weather() {
             <ClipLoader color="#f86c6b" size={150} loading={loading} />
           </div>
         ) : !apiError ? (
-          <div class="container">
+          <div class="weather-container">
             <WeatherButton
               cities={cities}
               handleCityChange={handleCityChange}
